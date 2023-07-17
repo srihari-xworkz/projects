@@ -1,10 +1,18 @@
 package com.Try;
 
 public class Demo {
-
-	public static void main(String[] args) {
-		System.out.println("just tried first run from eclipse");
-
+	static int id = 1;
+	static String name= "shree";
+	
+	void method() {
+		System.out.println(name);
 	}
-
+		
+	
+	public static void main(String[] args) {
+		id=4;
+ 		System.out.println(id);
+ 		Demo demo = new Demo();
+ 		demo.method();
+	}
 }

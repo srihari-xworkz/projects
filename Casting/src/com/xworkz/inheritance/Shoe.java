@@ -8,8 +8,9 @@ public class Shoe {
 	public Shoe(int price, ShoeSize size, ShoeColor color) {
 		this.price=price;
 		this.size=size;
-		this.color=color;
-		
+		this.color=color;		
 	}
+	
+	
 
 }

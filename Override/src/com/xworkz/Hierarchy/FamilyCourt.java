@@ -10,11 +10,11 @@ public class FamilyCourt extends CivilCourt{
 	@Override
 	void propertyCase()
 	{
-		System.out.println("solves property cases");
+		System.out.println("overridden propertyCases");
 	}
 	@Override
 	void theftCase()
 	{
-		System.out.println("solves theft case");
+		System.out.println("overridden theftCase");
 	}
 }

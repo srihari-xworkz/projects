@@ -14,12 +14,12 @@ public class CivilCourt extends HighCourt{
 	@Override
 	void criminalCase()
 	{
-		System.out.println("handles criminal cases");
+		System.out.println("overridden criminal cases");
 	}
 	@Override
 	void forgeryCase()
 	{
-		System.out.println("handles forgery cases");
+		System.out.println("overridden forgery cases");
 	}
 	
 }

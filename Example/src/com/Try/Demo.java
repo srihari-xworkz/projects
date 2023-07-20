@@ -1,19 +1,22 @@
 package com.Try;
 
 public class Demo {
-	
-	int id;
-	
-	
-	int getId()
+
+	static void name()
 	{
-		return id;
+		System.out.println("example");
 	}
 	
-	void setId(int id)
+	static void name2()
 	{
-		this.id=id;
+		System.out.println("static method");
+		name();
+		
 	}
 	
+	public static void main(String[] args) {
+		
+		
+	}
 }
 

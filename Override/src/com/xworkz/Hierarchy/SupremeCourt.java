@@ -9,7 +9,7 @@ public class SupremeCourt extends Court {
 	@Override
 	void justice()
 		{
-			System.out.println("Court gives justice");
+			System.out.println("Supreme Court gives justice");
 		}
 
 	

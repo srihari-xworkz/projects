@@ -14,12 +14,12 @@ public class HighCourt extends SupremeCourt{
 	@Override
 	void importantCase()
 	{
-		System.out.println("important cases are handled by supreme court");
+		System.out.println("overridden importantCase()");
 	}
 	@Override
 	void justice()
 	{
-		System.out.println("Court gives justice");
+		System.out.println("overridden forgeryCase()");
 	}
 
 }

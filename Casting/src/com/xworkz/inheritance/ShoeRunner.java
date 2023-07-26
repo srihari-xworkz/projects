@@ -11,11 +11,11 @@ public class ShoeRunner {
 		System.out.println();
 		
 		Shoe puma = new PumaShoe("Sneakers", "germany", 800, ShoeSize.SHOE8, ShoeColor.BROWN);
-		ShoeUtil.buy(puma);
+		ShoeUtil.buy(shoe);
 		System.out.println();
 		
 		Shoe nike = new NikeShoe("Donahoe", "woods", 600, ShoeSize.SHOE7, ShoeColor.GREY);
-		ShoeUtil.buy(nike);
+		ShoeUtil.buy(shoe);
 		
 	}
 	

@@ -11,12 +11,13 @@ public class FarmChicken extends Chicken {
 		this.careTaker = careTaker;
 
 	}
-
+	
+	@Override
 	void printInfo() {
 		super.printInfo();
 		System.out.println("printing info about FarmChicken");
 		System.out.println("no of days is :" + noOfDays);
-		System.err.println("care Taker name is :" + careTaker);
+		System.out.println("care Taker name is :" + careTaker);
 	}
 
 }

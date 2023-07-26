@@ -1,4 +1,4 @@
-package com.xworkz.associationTask;
+package com.xworkz.association;
 
 public class Director {
 	String directorName;

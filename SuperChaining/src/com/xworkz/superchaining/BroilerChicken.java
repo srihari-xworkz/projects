@@ -12,6 +12,7 @@ public class BroilerChicken extends Chicken {
 
 	}
 
+	@Override
 	void printInfo() {
 		super.printInfo();
 		System.out.println("printing info about broiler chicken");

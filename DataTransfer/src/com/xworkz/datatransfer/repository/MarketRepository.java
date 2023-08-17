@@ -8,4 +8,10 @@ public interface MarketRepository {
 
 	public void save(MarketDTO marketDTO);
 
+	public MarketDTO findByArea(String area);
+
+	public MarketDTO findByType(String type);
+
+	public MarketDTO[] readAll();
+
 }

@@ -18,4 +18,35 @@ public class MarketRepositoryImpl implements MarketRepository {
 		}
 	}
 
+	@Override
+	public MarketDTO findByArea(String area) {
+		for (int i = 0; i < index; i++) {
+			if (marketDTOs[i].getArea() == area) {
+				System.out.println("area match found...");
+				return marketDTOs[i];
+			} else {
+				System.err.println("given area is not found, checking further.....");
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public MarketDTO findByType(String type) {
+		for (int i = 0; i < index; i++) {
+			if (marketDTOs[i].getType() == type) {
+				System.out.println("type match found...");
+				return marketDTOs[i];
+			} else {
+				System.err.println("given type is not found, checking further.....");
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public MarketDTO[] readAll() {
+		return marketDTOs;
+	}
+
 }

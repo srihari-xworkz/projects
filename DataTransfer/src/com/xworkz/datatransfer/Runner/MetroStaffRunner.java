@@ -1,5 +1,6 @@
 package com.xworkz.datatransfer.Runner;
 
+import com.xworkz.datatransfer.dto.MarketDTO;
 import com.xworkz.datatransfer.dto.MetroStaffDTO;
 import com.xworkz.datatransfer.repository.MetroStaffImpl;
 import com.xworkz.datatransfer.repository.MetroStaffRepository;
@@ -23,6 +24,27 @@ public class MetroStaffRunner {
 		metroStaffRepository.save(metroStaffDTO3);
 		metroStaffRepository.save(metroStaffDTO4);
 		metroStaffRepository.save(metroStaffDTO5);
+
+		System.out.println();
+
+		System.out.println(metroStaffRepository.findByEmpName("ashok"));
+
+		System.out.println();
+
+		System.out.println(metroStaffRepository.findByBranch("mahalakshmi"));
+
+		System.out.println();
+
+		System.out.println(metroStaffRepository.findBySalary(25000));
+
+		System.out.println();
+
+		MetroStaffDTO[] metrostaff = metroStaffRepository.readAll();
+		for (int i = 0; i < metrostaff.length; i++) {
+			if (metrostaff != null) {
+				System.out.println(metrostaff[i]);
+			}
+		}
 
 	}
 

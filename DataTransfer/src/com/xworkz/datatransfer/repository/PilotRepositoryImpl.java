@@ -18,4 +18,49 @@ public class PilotRepositoryImpl implements PilotRepository {
 		}
 	}
 
+	@Override
+	public PilotDTO findByAge(int age) {
+		for (int i = 0; i < index; i++) {
+			if (pilotDTO[i].getAge() == age) {
+				System.out.println("age match found...");
+				return pilotDTO[i];
+			} else {
+				System.err.println("given age is not found, checking further.....");
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public PilotDTO findByRank(String rank) {
+		for (int i = 0; i < index; i++) {
+			if (pilotDTO[i].getRank() == rank) {
+				System.out.println("rank match found...");
+				return pilotDTO[i];
+			} else {
+				System.err.println("given rank is not found, checking further.....");
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public PilotDTO findByName(String names) {
+		for (int i = 0; i < index; i++) {
+			if (pilotDTO[i].getName() == names) {
+				System.out.println("name match found...");
+				return pilotDTO[i];
+			} else {
+				System.err.println("given name is not found, checking further.....");
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public PilotDTO[] readAll() {
+
+		return pilotDTO;
+	}
+
 }

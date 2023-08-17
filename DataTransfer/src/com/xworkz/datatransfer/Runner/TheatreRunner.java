@@ -11,15 +11,10 @@ public class TheatreRunner {
 		System.out.println("invoking main of Theatre");
 
 		TheatreDTO theatreDTO1 = new TheatreDTO("Shanti", 200, 400, 4, true);
-		System.out.println(theatreDTO1.toString());
 		TheatreDTO theatreDTO2 = new TheatreDTO("amar", 150, 200, 3, false);
-		System.out.println(theatreDTO2.toString());
 		TheatreDTO theatreDTO3 = new TheatreDTO("inox", 100, 800, 5, true);
-		System.out.println(theatreDTO3.toString());
 		TheatreDTO theatreDTO4 = new TheatreDTO("pvr", 150, 1200, 5, true);
-		System.out.println(theatreDTO4.toString());
 		TheatreDTO theatreDTO5 = new TheatreDTO("gopalan", 250, 500, 4, false);
-		System.out.println(theatreDTO5.toString());
 
 		System.out.println();
 
@@ -29,6 +24,21 @@ public class TheatreRunner {
 		theatreRepository.save(theatreDTO3);
 		theatreRepository.save(theatreDTO4);
 		theatreRepository.save(theatreDTO5);
+		System.out.println();
+
+		System.out.println(theatreRepository.findByCapacity(100));
+		System.out.println();
+		System.out.println(theatreRepository.findByName("amar"));
+		System.out.println();
+		System.out.println(theatreRepository.findByRating(4));
+		System.out.println();
+
+		TheatreDTO[] theatredto = theatreRepository.readAll();
+		for (int i = 0; i < theatredto.length; i++) {
+			if (theatredto != null) {
+				System.out.println(theatredto[i]);
+			}
+		}
 
 	}
 

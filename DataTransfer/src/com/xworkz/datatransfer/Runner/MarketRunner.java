@@ -23,6 +23,23 @@ public class MarketRunner {
 		marketRepository.save(marketDTO4);
 		marketRepository.save(marketDTO5);
 
+		System.out.println();
+
+		System.out.println(marketRepository.findByArea("chickpete"));
+
+		System.out.println();
+
+		System.out.println(marketRepository.findByType("flowers"));
+
+		System.out.println();
+
+		MarketDTO[] marketdto = marketRepository.readAll();
+		for (int i = 0; i < marketdto.length; i++) {
+			if (marketdto != null) {
+				System.out.println(marketdto[i]);
+			}
+		}
+
 	}
 
 }

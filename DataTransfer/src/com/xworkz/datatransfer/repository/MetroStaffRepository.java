@@ -8,4 +8,12 @@ public interface MetroStaffRepository {
 
 	public void save(MetroStaffDTO metroStaffDTO);
 
+	public MetroStaffDTO findByEmpName(String emp);
+
+	public MetroStaffDTO findBySalary(int amount);
+
+	public MetroStaffDTO findByBranch(String branch);
+
+	public MetroStaffDTO[] readAll();
+
 }

@@ -9,4 +9,12 @@ public interface TheatreRepository {
 
 	public void save(TheatreDTO theatreDTO);
 
+	public TheatreDTO findByCapacity(int capacity);
+
+	public TheatreDTO findByRating(int rates);
+
+	public TheatreDTO findByName(String name);
+
+	public TheatreDTO[] readAll();
+
 }
